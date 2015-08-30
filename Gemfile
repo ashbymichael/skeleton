@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+
 
 # PostgreSQL driver
-gem 'pg'
+gem 'pg', '0.18.2'
 
 # Sinatra driver
 gem 'sinatra'
@@ -15,6 +15,11 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'hirb'
+gem 'bcrypt'
+gem 'faker'
+gem 'sinatra-flash'
+gem 'better_errors'
+
 
 group :test do
   gem 'shoulda-matchers'
@@ -25,5 +30,4 @@ end
 
 group :test, :development do
   gem 'factory_girl'
-  gem 'faker'
 end
